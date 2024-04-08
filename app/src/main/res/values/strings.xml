@@ -1,3 +1,35 @@
 <resources>
     <string name="app_name">MobileAppProject</string>
+    <string name="delivery_history_title">Delivery History</string>
+    <string name="delivery_history_date">05/10/22</string>
+
+    <string name="delivery_history_code">T–12–23suhs</string>
+    <string name="delivery_history_detail_txt">Delivery Detail</string>
+
+    <string name="delivery_history_location_label">Resto Location</string>
+    <string name="delivery_history_location">State Pak maman, Kemang</string>
+
+    <string name="delivery_history_target_label">Discover Location</string>
+    <string name="delivery_history_target_location">Jl. kemang raya no</string>
+
+    <string name="delivery_history_order_title">Order detail</string>
+    <string name="delivery_history_order_item_1">Fenfriece</string>
+    <string name="delivery_history_order_item_1_quantity">1</string>
+    <string name="delivery_history_order_item_2">ayam gorang</string>
+    <string name="delivery_history_order_item_2_quantity">1</string>
+
+    <string name="delivery_history_payment_details_title">Payment details</string>
+    <string name="delivery_history_payment_details_price">Price</string>
+    <string name="delivery_history_payment_details_price_amount">30.000</string>
+    <string name="delivery_history_payment_details_delivery_fee">Delivery fee</string>
+    <string name="delivery_history_payment_details_delivery_fee_amount">10.000</string>
+    <string name="delivery_history_payment_details_discounts">Discount</string>
+    <string name="delivery_history_payment_details_discounts_amount">-10.000</string>
+    <string name="delivery_history_payment_details_packaging_fee">Packaging Fee</string>
+    <string name="delivery_history_payment_details_packaging_fee_amount">2.000</string>
+    <string name="delivery_history_payment_details_total_payment">Total payment</string>
+    <string name="delivery_history_payment_details_total_payment_amount">32.000</string>
+    <string name="delivery_history_payment_method">Paid with Link Aja By Sheila</string>
+
+    <string name="delivery_history_bottom_button">Download Bill</string>
 </resources>

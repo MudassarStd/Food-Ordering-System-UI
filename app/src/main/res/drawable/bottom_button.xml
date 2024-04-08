@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/transparent" /> <!-- no inner color -->
+    <corners android:radius="@dimen/bottom_button_corner_radius"/> <!-- corners radius -->
+    <stroke android:color="@color/color_primary"
+        android:width="@dimen/bottom_button_border_thickness"/> <!-- border color and width -->
+</shape>

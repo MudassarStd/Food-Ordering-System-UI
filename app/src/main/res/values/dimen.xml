@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_delivery_history_screen">20dp</dimen>
+    <dimen name="margin_inner">20dp</dimen>
+
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_medium">18sp</dimen>
+    <dimen name="text_size_large">20sp</dimen>
+
+    <dimen name="grid_corner_radius">30dp</dimen>
+    <dimen name="grid_border_thickness">3dp</dimen>
+
+    <dimen name="bottom_button_corner_radius">10dp</dimen>
+    <dimen name="bottom_button_border_thickness">2dp</dimen>
+
+</resources>
