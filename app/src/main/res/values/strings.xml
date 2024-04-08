@@ -1,4 +1,5 @@
 <resources>
+    <!-- Delivery History -->
     <string name="app_name">MobileAppProject</string>
     <string name="delivery_history_title">Delivery History</string>
     <string name="delivery_history_date">05/10/22</string>
@@ -32,4 +33,12 @@
     <string name="delivery_history_payment_method">Paid with Link Aja By Sheila</string>
 
     <string name="delivery_history_bottom_button">Download Bill</string>
+
+    <!-- Delivered -->
+    <string name="delivered_app_name">Jajan App</string>
+    <string name="delivered_status">Delivered</string>
+    <string name="delivered_review_label">It is Disappointing, 5 is awesome</string>
+
+
+
 </resources>

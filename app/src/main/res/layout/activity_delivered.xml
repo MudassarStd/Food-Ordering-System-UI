@@ -15,57 +15,127 @@
         android:paddingEnd="@dimen/padding_delivery_history_screen"
         android:layout_marginTop="25dp"
         >
-        <!--DELIVERY HISTORY DATA-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:paddingStart="@dimen/padding_delivery_history_screen"
+            android:paddingEnd="@dimen/padding_delivery_history_screen"
             >
-
-            <!-- TextView on the left -->
             <TextView
-                android:id="@+id/delivery_history_header"
+                android:id="@+id/delivered_title"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/delivery_history_title"
-                android:textColor="@color/color_black"
+                android:text="@string/delivered_app_name"
+                android:textColor="@color/color_primary"
                 android:textStyle="bold"
-                android:gravity="center"
+                android:gravity="start"
                 android:textSize="@dimen/text_size_large"
                 />
-
-            <!-- Vertical LinearLayout for the two right TextViews -->
-            <LinearLayout
+            <TextView
+                android:id="@+id/delivered_date"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:orientation="vertical">
+                android:text="@string/delivery_history_date"
+                android:textColor="@color/color_text_2"
+                android:gravity="end"
+                android:textSize="@dimen/text_size_medium"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/padding_delivery_history_screen"
+            android:paddingEnd="@dimen/padding_delivery_history_screen"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:id="@+id/delivered_status"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/delivered_status"
+                android:textColor="@color/color_text_2"
+                android:gravity="start"
+                android:textSize="@dimen/text_size_medium"
+                />
+            <TextView
+                android:id="@+id/delivered_code"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/delivery_history_code"
+                android:textColor="@color/color_text_2"
+                android:gravity="end"
+                android:textSize="@dimen/text_size_medium"
+                />
+        </LinearLayout>
 
-                <!-- First TextView on the right -->
-                <TextView
-                    android:id="@+id/delivery_history_date"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:text="@string/delivery_history_date"
-                    android:textColor="@color/color_text_2"
-                    android:textSize="@dimen/text_size_medium"
-                    android:textStyle="bold"/>
+        <!-- REVIEW -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/delivered_review_label"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/delivered_review_label"
+                android:textColor="@color/color_black"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/text_size_medium"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                >
 
-                <!-- Second TextView below the first one -->
-                <TextView
-                    android:id="@+id/delivery_history_code"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:text="@string/delivery_history_code"
-                    android:textColor="@color/color_text_2"
-                    android:textStyle="bold"
-                    android:textSize="@dimen/text_size_medium"/>
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_star_outlined"
+                    android:importantForAccessibility="no"
+                    />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_star_outlined"
+                    android:importantForAccessibility="no"
+                    />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_star_outlined"
+                    android:importantForAccessibility="no"
+                    />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_star_outlined"
+                    android:importantForAccessibility="no"
+                    />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_star_outlined"
+                    android:importantForAccessibility="no"
+                    />
             </LinearLayout>
 
-        </LinearLayout> <!--DELIVERY HISTORY DATA-->
+        </LinearLayout>
 
         <!--DELIVERY Detail Text-->
         <TextView
@@ -81,53 +151,53 @@
             />
 
         <!--DELIVERY DETAIL CARD-->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="15dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
 
-                <!-- ImageView on the left -->
-                <ImageView
-                    android:id="@+id/delivery_history_location_image"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:importantForAccessibility="no"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/image_food_item"
+            <!-- ImageView on the left -->
+            <ImageView
+                android:id="@+id/delivery_history_location_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:importantForAccessibility="no"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image_food_item"
+                />
+
+            <!-- Vertical LinearLayout for the two right TextViews -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp">
+
+                <!-- First TextView below the ImageView -->
+                <TextView
+                    android:id="@+id/delivery_history_location_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delivery_history_location_label"
+                    android:textColor="@color/color_text_1"
+                    android:textSize="@dimen/text_size_medium"
+                    android:layout_marginTop="5dp"
                     />
 
-                <!-- Vertical LinearLayout for the two right TextViews -->
-                <LinearLayout
-                    android:layout_width="0dp"
+                <!-- Second TextView below the first one -->
+                <TextView
+                    android:id="@+id/delivery_history_location_subtitle"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:layout_marginStart="16dp">
-
-                    <!-- First TextView below the ImageView -->
-                    <TextView
-                        android:id="@+id/delivery_history_location_title"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/delivery_history_location_label"
-                        android:textColor="@color/color_text_1"
-                        android:textSize="@dimen/text_size_medium"
-                        android:layout_marginTop="5dp"
-                        />
-
-                    <!-- Second TextView below the first one -->
-                    <TextView
-                        android:id="@+id/delivery_history_location_subtitle"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:text="@string/delivery_history_location"
-                        android:textColor="@color/color_black"
-                        android:textSize="@dimen/text_size_large"
-                        android:textStyle="bold" />
-                </LinearLayout>
+                    android:layout_marginTop="10dp"
+                    android:text="@string/delivery_history_location"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_size_large"
+                    android:textStyle="bold" />
             </LinearLayout>
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
