@@ -13,6 +13,12 @@
         android:theme="@style/Theme.MobileAppProject"
         tools:targetApi="31">
         <activity
+            android:name=".delivery.OrderReview"
+            android:exported="false" />
+        <activity
+            android:name=".delivery.ProcessOrdering"
+            android:exported="false" />
+        <activity
             android:name=".delivery.Delivered"
             android:exported="false" />
         <activity
