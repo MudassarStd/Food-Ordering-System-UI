@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".delivery.OrderProcessing">
+    tools:context=".delivery.OrderDelivering">
 
     <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:importantForAccessibility="no"
-            android:scaleType="centerCrop"
-            android:src="@drawable/image_map_placeholder" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_map_placeholder" />
 </LinearLayout>

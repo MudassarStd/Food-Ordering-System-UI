@@ -420,7 +420,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
                 android:gravity="end"
-                android:text="@string/delivery_history_payment_details_delivery_fee_amount"
+                android:text="@string/delivery_history_payment_details_discounts_amount"
                 android:textColor="@color/color_black"
                 android:textSize="@dimen/text_size_medium" />
         </LinearLayout>
@@ -503,9 +503,10 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_marginBottom="40dp">
             <Button
-                android:layout_width="150dp"
+                android:layout_width="@dimen/bottom_button_width"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:text="@string/delivery_history_bottom_button"

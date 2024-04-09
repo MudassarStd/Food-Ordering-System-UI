@@ -12,9 +12,13 @@
 
     <dimen name="bottom_button_corner_radius">10dp</dimen>
     <dimen name="bottom_button_border_thickness">2dp</dimen>
+    <dimen name="bottom_button_width">150dp</dimen>
 
     <dimen name="normal_width_height">30dp</dimen>
     <dimen name="larger_width_height">50dp</dimen>
+
+    <dimen name="order_processing_selected_ic">50dp</dimen>
+    <dimen name="order_processing_unselected_ic">30dp</dimen>
 
 
 </resources>

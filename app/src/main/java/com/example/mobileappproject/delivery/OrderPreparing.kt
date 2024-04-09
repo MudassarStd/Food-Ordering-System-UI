@@ -6,18 +6,18 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.mobileappproject.R
-import com.example.mobileappproject.databinding.ActivityProcessOrderingBinding
-import com.google.android.material.bottomsheet.BottomSheetDialogFragment
+import com.example.mobileappproject.databinding.ActivityOrderPreparingBinding
+import com.example.mobileappproject.delivery.fragments.FragmentOrderPreparing
 
-class ProcessOrdering : AppCompatActivity() {
-    private lateinit var binding :  ActivityProcessOrderingBinding
+class OrderPreparing : AppCompatActivity() {
+    private lateinit var binding :  ActivityOrderPreparingBinding
 
-    val fragObject  = OrderProcessingFragment()
+    private val fragObject  = FragmentOrderPreparing()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
-        binding = ActivityProcessOrderingBinding.inflate(layoutInflater)
+        binding = ActivityOrderPreparingBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
 
@@ -30,5 +30,5 @@ class ProcessOrdering : AppCompatActivity() {
 
         fragObject.show(supportFragmentManager,fragObject.tag)
     }
-    
+
 }

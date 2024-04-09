@@ -30,6 +30,7 @@
     <string name="delivery_history_payment_details_packaging_fee_amount">2.000</string>
     <string name="delivery_history_payment_details_total_payment">Total payment</string>
     <string name="delivery_history_payment_details_total_payment_amount">32.000</string>
+
     <string name="delivery_history_payment_method">Paid with Link Aja By Sheila</string>
 
     <string name="delivery_history_bottom_button">Download Bill</string>
@@ -42,7 +43,12 @@
     <!-- Order Processing -->
     <string name="order_processing">Process Ordering</string>
     <string name="order_preparing">Preparing Your Order</string>
-    <string name="order_delivering">Delivery Your Order</string>
+    <string name="order_delivering">Delivering Your Order</string>
+    <string name="order_processing_bottom_button">Cancel</string>
+    <string name="order_confirmed">Confirmed your order</string>
+    <string name="order_preparing_time">wait for a minute</string>
+    <string name="order_food_ready">Food is ready</string>
+    <string name="order_delivering_on_way">order is on its way to your location</string>
 
     <!-- ORDER REVIEW -->
     <string name="review_screen_title">Some swift delivery</string>
