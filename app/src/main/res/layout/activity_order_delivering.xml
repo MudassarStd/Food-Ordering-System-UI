@@ -12,5 +12,5 @@
         android:layout_height="match_parent"
         android:importantForAccessibility="no"
         android:scaleType="centerCrop"
-        android:src="@drawable/image_map_placeholder" />
+        android:src="@drawable/image_map_placeholder_142" />
 </LinearLayout>

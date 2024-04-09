@@ -1,11 +1,15 @@
 package com.example.mobileappproject.delivery.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
 import com.example.mobileappproject.R
+import com.example.mobileappproject.delivery.OrderDelivering
+import com.example.mobileappproject.delivery.OrderPreparing
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
 
@@ -26,6 +30,24 @@ class FragmentOrderProcessing : BottomSheetDialogFragment() {
         // getting id's of views from BottomSheetDialog
 
         val btn = view.findViewById<Button>(R.id.btnCancelOrderProcessing)
+
+
+        btn.setOnClickListener {
+            dismiss()
+        }
+
+        val prep = view.findViewById<ImageView>(R.id.iv2)
+        prep.setOnClickListener {
+            val intent = Intent(this.context, OrderPreparing::class.java)
+            startActivity(intent)
+        }
+
+        val deli = view.findViewById<ImageView>(R.id.iv3)
+        deli.setOnClickListener {
+            val intent = Intent(this.context, OrderDelivering::class.java)
+            startActivity(intent)
+        }
+
 
 //        val ll1 = view.findViewById<LinearLayout>(R.id.llLine1)
 //        val ll2 = view.findViewById<LinearLayout>(R.id.llLine2)
@@ -68,13 +90,5 @@ class FragmentOrderProcessing : BottomSheetDialogFragment() {
 //            tv2.textSize = resources.getDimensionPixelSize(R.dimen.text_size_medium).toFloat()
 //
 //        }
-
-
-
-        btn.setOnClickListener {
-            dismiss()
-        }
-
-
     }
 }

@@ -33,7 +33,7 @@
                 android:layout_width="@dimen/order_processing_selected_ic"
                 android:layout_height="@dimen/order_processing_selected_ic"
                 android:layout_weight=".333"
-                android:src="@drawable/image_circular"
+                android:src="@drawable/image_circular_142"
                 android:importantForAccessibility="no" />
 
             <TextView
@@ -51,7 +51,7 @@
                 android:layout_width="@dimen/order_processing_unselected_ic"
                 android:layout_height="@dimen/order_processing_unselected_ic"
                 android:layout_weight=".333"
-                android:src="@drawable/image_chat"
+                android:src="@drawable/image_chat_142"
                 android:importantForAccessibility="no" />
         </LinearLayout>
 
@@ -80,8 +80,10 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_weight=".3"
-                android:src="@drawable/image_circular"
-                android:importantForAccessibility="no" />
+                android:src="@drawable/image_circular_142"
+                android:importantForAccessibility="no"
+                android:clickable="true"
+                android:focusable="true" />
 
             <TextView
                 android:id="@+id/tv2"
@@ -98,7 +100,7 @@
                 android:layout_height="30dp"
                 android:visibility="gone"
                 android:layout_weight=".3"
-                android:src="@drawable/image_chat"
+                android:src="@drawable/image_chat_142"
                 android:importantForAccessibility="no" />
         </LinearLayout>
 
@@ -127,8 +129,10 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_weight=".3"
-                android:src="@drawable/image_circular"
-                android:importantForAccessibility="no" />
+                android:src="@drawable/image_circular_142"
+                android:importantForAccessibility="no"
+                android:clickable="true"
+                android:focusable="true"/>
 
             <TextView
                 android:id="@+id/tv3"
@@ -145,7 +149,7 @@
                 android:layout_height="30dp"
                 android:visibility="gone"
                 android:layout_weight=".3"
-                android:src="@drawable/image_chat"
+                android:src="@drawable/image_chat_142"
                 android:importantForAccessibility="no" />
         </LinearLayout>
 
@@ -163,7 +167,7 @@
             android:layout_height="wrap_content"
             android:layout_marginVertical="20dp"
             app:cornerRadius="@dimen/bottom_button_corner_radius"
-            android:background="@drawable/bottom_button"
+            android:background="@drawable/bottom_button_142"
             android:backgroundTint="@color/color_primary"
             android:textColor="@color/color_primary"
             android:text="@string/order_processing_bottom_button"/>

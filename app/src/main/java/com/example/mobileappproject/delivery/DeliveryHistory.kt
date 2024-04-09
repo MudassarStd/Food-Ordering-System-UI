@@ -1,6 +1,8 @@
 package com.example.mobileappproject.delivery
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -17,5 +19,12 @@ class DeliveryHistory : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        val deli = findViewById<Button>(R.id.delivery_history_bottom_button)
+        deli.setOnClickListener {
+            val intent = Intent(this@DeliveryHistory, OrderProcessing::class.java)
+            startActivity(intent)
+        }
     }
 }
+

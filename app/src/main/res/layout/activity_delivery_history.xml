@@ -94,7 +94,7 @@
                     android:layout_height="70dp"
                     android:importantForAccessibility="no"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/image_food_item"
+                    android:src="@drawable/image_food_item_142"
                     />
 
                 <!-- Vertical LinearLayout for the two right TextViews -->
@@ -140,7 +140,7 @@
                 android:id="@+id/delivery_history_location_target_image"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:src="@drawable/image_target"
+                android:src="@drawable/image_target_142"
                 android:scaleType="centerCrop"
                 android:importantForAccessibility="no" />
 
@@ -263,7 +263,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:background="@drawable/top_rounded_borders"
+            android:background="@drawable/top_rounded_borders_142"
             android:layout_marginTop="5dp"
             >
             <TextView
@@ -296,7 +296,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:background="@drawable/square_borders"
+            android:background="@drawable/square_borders_142"
             >
             <TextView
                 android:id="@+id/delivery_history_payment_details_price_delivery_fee"
@@ -327,7 +327,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:background="@drawable/square_borders"
+            android:background="@drawable/square_borders_142"
             >
             <TextView
                 android:id="@+id/delivery_history_payment_details_price_discounts"
@@ -358,7 +358,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:background="@drawable/square_borders"
+            android:background="@drawable/square_borders_142"
             >
             <TextView
                 android:id="@+id/delivery_history_payment_details_price_packaging"
@@ -389,7 +389,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:background="@drawable/bottom_rounded_borders"
+            android:background="@drawable/bottom_rounded_borders_142"
             >
             <TextView
                 android:id="@+id/delivery_history_payment_details_total_payment"
@@ -435,12 +435,13 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <Button
+                android:id="@+id/delivery_history_bottom_button"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:text="@string/delivery_history_bottom_button"
                 android:textColor="@color/color_primary"
-                android:background="@drawable/bottom_button"
+                android:background="@drawable/bottom_button_142"
                 android:layout_centerHorizontal="true"
                 android:layout_alignParentBottom="true"
                 />
