@@ -4,7 +4,7 @@
     <dimen name="margin_inner">20dp</dimen>
 
     <dimen name="text_size_small">12sp</dimen>
-    <dimen name="text_size_medium">18sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
     <dimen name="text_size_large">20sp</dimen>
 
     <dimen name="grid_corner_radius">30dp</dimen>
@@ -12,5 +12,9 @@
 
     <dimen name="bottom_button_corner_radius">10dp</dimen>
     <dimen name="bottom_button_border_thickness">2dp</dimen>
+
+    <dimen name="normal_width_height">30dp</dimen>
+    <dimen name="larger_width_height">50dp</dimen>
+
 
 </resources>

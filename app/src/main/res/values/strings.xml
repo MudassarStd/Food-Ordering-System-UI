@@ -49,5 +49,7 @@
     <string name="review_screen_subtitle">we delivered your food in 25 min</string>
     <string name="food_delivery_status">Food Delivered</string>
     <string name="food_enjoy">Enjoy your meal</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
