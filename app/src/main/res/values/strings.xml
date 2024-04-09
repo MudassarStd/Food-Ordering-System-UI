@@ -1,3 +1,42 @@
 <resources>
-    <string name="app_name">MobileAppProject</string>
+    <string name="app_name">Assignment2</string>
+    <string name="tv_email">Enter E-mail</string>
+    <string name="tv_passward">Enter Password</string>
+    <string name="tv_name">Enter Name</string>
+
+    <string name="tv_Dont_account">Don\'t have an account ?</string>
+    <string name="tv_create_account">Create account </string>
+
+    <!--    card view strings-->
+    <string name="tv_card_title">Sate Kemang...</string>
+    <string name="tv_distance">1.2 Km</string>
+    <string name="tv_time">7-9 min</string>
+    <string name="tv_rating">4.3</string>
+    <string name="tv_price">Rp30.000.-</string>
+
+
+    <string name="tv_see_all">see all</string>
+    <string name="tv_deal_around">Deals around you</string>
+    <string name="tv_top_rate">Top rate by other foodies</string>
+    <string name="tv_save_15">Save 15%</string>
+    <string name="tv_stayfrugal">#stayfrugal</string>
+    <string name="tv_becomes">Becomes</string>
+    <string name="tv_ecnomical">Ecnomical</string>
+    <string name="tv_promo">Promo</string>
+
+
+    <string name="tv_recomed">Recomended for you</string>
+    <string name="tv_order">Order Again</string>
+    <string name="tv_others">Others</string>
+    <string name="tv_popular_search">Popular Searches</string>
+    <string name="tv_search_history">Your search history</string>
+
+    <string name="tv_matching_restro">Metching Restro\'s</string>
+    <string name="tv_did_you_mean">Did you mean</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
 </resources>

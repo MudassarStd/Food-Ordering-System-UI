@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="PrimaryAppColor">#FF5722</color>
+    <color name="fade_black">#B2000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="main_color">#FAFAFA</color>
+
+<!--    <color name="PrimaryAppColor">#FF5722</color>-->
+
+    <color name="red">#FF0000</color>
+    <color name="green">#00EF0A</color>
+    <color name="searchbar_color">#FFFFFF</color>
+    <color name="primary_color">#FF5722</color>
+    <color name="outline_primary_color">#FFFFFF</color>
+    <color name="icon_bg_color">#FFA501</color>
+    <color name="fade_gray_color">#75CCCED1</color>
+    <color name="mehroon_color">#A82822</color>
+
+
+    <color name="color_gray">#A19C9C</color>
+    <color name="color_black">#000000</color>
+
+    <color name="gradient_color">#37FF5722</color>
+    <color name="searchtag_color">#12FF5722</color>
+
+
+    <color name="btn_color_Accent">#2196F3</color>
+    <color name="btn_color_primary">#FF5722</color>
+    <color name="secondary_color">#607D8B</color>
+    <color name="color_text">#212121</color>
+    <color name="color_background"> #FFFFFF</color>
+
 </resources>
