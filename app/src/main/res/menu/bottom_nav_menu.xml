@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+        <item android:id="@+id/bottomNavHome"
+            android:title="Home"
+            android:icon="@drawable/ic_camera"
+            />
+
+
+        <item android:id="@+id/bottomNavMap"
+            android:title="Map"
+            android:icon="@drawable/ic_camera"
+            />
+
+        <item android:id="@+id/bottomNavFav"
+            android:title="Favorites"
+            android:icon="@drawable/ic_camera"/>
+
+        <item android:id="@+id/bottomNavChat"
+            android:title="Chat"
+            android:icon="@drawable/ic_camera"/>
+
+        <item android:id="@+id/bottomNavPayment"
+            android:title="Payment"
+            android:icon="@drawable/ic_camera"/>
+
+
+</menu>

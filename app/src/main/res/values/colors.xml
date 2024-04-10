@@ -2,5 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="PrimaryAppColor">#FF5722</color>
+    <color name="PrimaryAppColor">#FD6433</color>
+    <color name="PrimaryAppColorDark">#FD6433</color>
+    <color name="PrimaryAppColorAccent">#FD6433</color>
+    <color name="FadedColor">#A89892</color>
+    <color name="lessFadedColor">#BDB0AB</color>
+    <color name="rbColor">#FF5722</color>
+
 </resources>

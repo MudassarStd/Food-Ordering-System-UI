@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,9 +18,65 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileAppProject"
         tools:targetApi="31">
+
+        <!--
+
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAxT-dMMUM6EiuGvOTkxAolE1Kcpe5Dtio" />
+
+
+
+        <activity
+            android:name=".Fifty_Nine"
+            android:exported="false"
+            android:label="@string/title_activity_fifty_nine"
+            android:theme="@style/Theme.MobileAppProject" />
+        <activity
+            android:name=".Fifty_Eight"
+            android:exported="false" />
+        <activity
+            android:name=".Fifty_Seven"
+            android:exported="false" />
+        <activity
+            android:name=".Fifty_Six"
+            android:exported="true" />
+        <activity
+            android:name=".Fifty_Five"
+            android:exported="true" />
+        <activity
+            android:name=".Fifty_Four"
+            android:exported="false">
+        </activity>
+
+
+        <activity
+            android:name=".AddNewChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentHostActivity"
+            android:exported="false"
+            android:theme="@style/PaymentHostActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".LocationFragmentHostActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
