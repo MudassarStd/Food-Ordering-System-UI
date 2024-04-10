@@ -22,13 +22,13 @@ class OrderReview : AppCompatActivity() {
 
         val deli = findViewById<TextView>(R.id.delivered_review_title)
         deli.setOnClickListener {
-            val intent = Intent(this@OrderReview, Delivered::class.java)
+            val intent = Intent(this, Delivered::class.java)
             startActivity(intent)
         }
 
         val deliv = findViewById<TextView>(R.id.delivered_title)
         deliv.setOnClickListener {
-            val intent = Intent(this@OrderReview, Delivered::class.java)
+            val intent = Intent(this, Delivered::class.java)
             startActivity(intent)
         }
 

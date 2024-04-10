@@ -12,12 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileAppProject"
         tools:targetApi="31">
-        <activity
-            android:name=".delivery.OrderDelivering"
-            android:exported="false" />
-        <activity
-            android:name=".delivery.OrderPreparing"
-            android:exported="false"/>
+
         <activity
             android:name=".delivery.OrderReview"
             android:exported="false" >

@@ -8,13 +8,12 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import com.example.mobileappproject.R
-import com.example.mobileappproject.delivery.OrderDelivering
-import com.example.mobileappproject.delivery.OrderPreparing
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
 
 class FragmentOrderProcessing : BottomSheetDialogFragment() {
 
+    val fragOrderPreparingObject = FragmentOrderPreparing()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -36,15 +35,16 @@ class FragmentOrderProcessing : BottomSheetDialogFragment() {
 
         val prep = view.findViewById<ImageView>(R.id.iv2)
         prep.setOnClickListener {
-            val intent = Intent(this.context, OrderPreparing::class.java)
-            startActivity(intent)
-        }
+            dismiss() //  dismisses order processing fragment
+            fragOrderPreparingObject.show(requireActivity().supportFragmentManager,fragOrderPreparingObject.tag) // showing order processing fragment
 
-        val deli = view.findViewById<ImageView>(R.id.iv3)
-        deli.setOnClickListener {
-            val intent = Intent(this.context, OrderDelivering::class.java)
-            startActivity(intent)
         }
+//
+//        val deli = view.findViewById<ImageView>(R.id.iv3)
+//        deli.setOnClickListener {
+//            val intent = Intent(this.context, OrderDelivering::class.java)
+//            startActivity(intent)
+//        }
 
 
 //        val ll1 = view.findViewById<LinearLayout>(R.id.llLine1)
