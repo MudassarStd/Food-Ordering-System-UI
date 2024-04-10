@@ -6,9 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
-import android.widget.TextView
 import com.example.mobileappproject.R
-import com.example.mobileappproject.delivery.Delivered
 import com.example.mobileappproject.delivery.OrderReview
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
@@ -27,7 +25,6 @@ class FragmentOrderDelivering : BottomSheetDialogFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val deli = view.findViewById<TextView>(R.id.tvTitleOrderDelivering)
         val iv2OD = view.findViewById<ImageView>(R.id.iv2OD)
 
         iv2OD.setOnClickListener {

@@ -1,6 +1,5 @@
 package com.example.mobileappproject.delivery.fragments
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -13,7 +12,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
 class FragmentOrderProcessing : BottomSheetDialogFragment() {
 
-    val fragOrderPreparingObject = FragmentOrderPreparing()
+    private val fragOrderPreparingObject = FragmentOrderPreparing()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
