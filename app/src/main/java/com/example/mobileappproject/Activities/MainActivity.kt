@@ -34,22 +34,6 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        binding.btnMoveFromMain.setOnClickListener {
-            startActivity(Intent(this, PaymentHostActivity::class.java))
-        }
-
-        binding.btnMoveFromMaintoChats.setOnClickListener {
-            startActivity(Intent(this, LocationFragmentHostActivity::class.java))
-        }
-
-
-
-//        binding.bottomNavMainActivity.setOnItemSelectedListener {
-//            when(it.itemId){
-//                R.id.bottomNavChat -> placeFragment(frag1)
-//            }
-//            true
-//        }
     }
 
 
