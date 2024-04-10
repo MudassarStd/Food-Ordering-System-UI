@@ -37,6 +37,37 @@
 
 
         <activity
+            android:name="com.example.task.YourCart"
+            android:exported="false" />
+        <activity
+            android:name="com.example.task.EmptyCart"
+            android:exported="false" />
+        <activity
+            android:name="com.example.task.yourFavourite"
+            android:exported="false" />
+
+        <activity
+            android:name="com.example.task.SearchFoood2"
+            android:exported="false" />
+        <activity
+            android:name="com.example.task.searchFood"
+            android:exported="false" />
+
+        <activity
+            android:name="com.example.task.recommendedOption"
+            android:exported="false" />
+
+        <activity
+            android:name="com.example.task.tagsearch"
+            android:exported="false" />
+        <activity
+            android:name="com.example.task.bottomnav"
+            android:exported="false" />
+
+
+<!--        Maaz-->
+
+        <activity
             android:name=".Fifty_Nine"
             android:exported="false"
             android:label="@string/title_activity_fifty_nine"
@@ -75,8 +106,14 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"
+            android:exported="false"
             android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name="com.example.task.home"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

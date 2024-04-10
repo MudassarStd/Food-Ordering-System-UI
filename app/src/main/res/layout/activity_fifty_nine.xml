@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fifty_Seven"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:id="@+id/editTextText2"
+            android:layout_width="300dp"
+            android:layout_height="57dp"
+
+            android:layout_marginTop="56dp"
+            android:drawableRight="@android:drawable/ic_lock_idle_lock"
+            android:drawablePadding="14dp"
+            android:drawableTint="#191111"
+            android:ems="10"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:text="Password"
+            android:textSize="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.324"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/editTextText3"
+            android:layout_width="300dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="12dp"
+            android:drawableRight="@android:drawable/ic_lock_lock"
+
+            android:drawablePadding="14dp"
+            android:drawableTint="#000000"
+            android:ems="10"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:text="PIN"
+            android:textSize="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.324"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="40dp"
+            android:drawableLeft="@drawable/settingmz"
+            android:text="Security"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextText4"
+            android:layout_width="300dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Two Factor authentification"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.324"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText3"
+            app:layout_constraintVertical_bias="0.007" />
+
+        <Button
+            android:id="@+id/btnorg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#FF5722"
+            android:text="Save"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
