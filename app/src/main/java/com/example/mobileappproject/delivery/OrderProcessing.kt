@@ -6,18 +6,18 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.mobileappproject.R
-import com.example.mobileappproject.databinding.ActivityProcessOrderingBinding
+import com.example.mobileappproject.databinding.ActivityOrderProcessingBinding
 import com.example.mobileappproject.delivery.fragments.FragmentOrderProcessing
 
 class OrderProcessing : AppCompatActivity() {
-    private lateinit var binding :  ActivityProcessOrderingBinding
+    private lateinit var binding :  ActivityOrderProcessingBinding
 
     private val fragObject  = FragmentOrderProcessing()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
-        binding = ActivityProcessOrderingBinding.inflate(layoutInflater)
+        binding = ActivityOrderProcessingBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
 

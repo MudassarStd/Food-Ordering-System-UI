@@ -30,8 +30,6 @@ class FragmentOrderProcessing : BottomSheetDialogFragment() {
         // getting id's of views from BottomSheetDialog
 
         val btn = view.findViewById<Button>(R.id.btnCancelOrderProcessing)
-
-
         btn.setOnClickListener {
             dismiss()
         }
