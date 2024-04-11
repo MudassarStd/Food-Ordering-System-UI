@@ -14,6 +14,7 @@ import com.example.mobileappproject.Fifty_Four
 import com.example.mobileappproject.LocationFragmentHostActivity
 import com.example.mobileappproject.R
 import com.example.mobileappproject.Utils.MoveFragments
+import com.example.mobileappproject.umaractv.Activity_Umar49
 
 
 class Payment2Fragment_34 : Fragment() {
@@ -67,7 +68,7 @@ class Payment2Fragment_34 : Fragment() {
         // showing bottom sheet of order double check on click
         btnEditOrder.setOnClickListener {
 //            EditOrderBtmSheetFragment().show(requireActivity().supportFragmentManager, EditOrderBtmSheetFragment().tag)
-            startActivity(Intent(requireContext(), Fifty_Four::class.java))
+            startActivity(Intent(requireContext(), Activity_Umar49::class.java))
         }
         // -----------------------------------------------------------------------------------------------------
 

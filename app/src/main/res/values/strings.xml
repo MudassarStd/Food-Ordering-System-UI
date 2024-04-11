@@ -4,7 +4,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
-<!--    Maaz Resources  (Start) -->
+    <!--    Maaz Resources  (Start) -->
 
     <string name="title_activity_prac_set">Prac_set</string>
     <!-- Strings used for fragments for navigation -->
@@ -90,7 +90,24 @@
     <string name="tv_did_you_mean">Did you mean</string>
 
 
+    <!--    Umar-->
 
-
+    <string name="topping" translatable="false">Topping</string>
+    <string name="pizza_mashroum_sauce" translatable="false">Pizza Mashroum Sauce</string>
+    <string name="meat" translatable="false">Meat</string>
+    <string name="chicken" translatable="false">Chicken</string>
+    <string name="cheese">Cheese</string>
+    <string name="pepperoni">Pepperoni</string>
+    <string name="tuna_melt">Tuna Melt</string>
+    <string name="item_quantity">Item quantity</string>
+    <string name="order">Order</string>
+    <string name="rp2_000">+Rp2.000</string>
+    <string name="rp1">+Rp1</string>
+    <string name="order_quantity">1</string>
+    <string name="kfc_pejetan">KFC Pejetan</string>
+    <string name="_4_3">4.3</string>
+    <string name="_7_9min">7-9min</string>
+    <string name="_1_2km">1.2KM</string>
+    <string name="kfc_kemangs">KFC Kemangs</string>
 
 </resources>
