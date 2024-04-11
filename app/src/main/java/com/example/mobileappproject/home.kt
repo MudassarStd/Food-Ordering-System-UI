@@ -1,10 +1,15 @@
-package com.example.task
+package com.example.mobileappproject.Adapters
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import com.example.mobileappproject.Adapters.homefragment
 import com.example.mobileappproject.R
 import com.example.mobileappproject.databinding.ActivityBottomnavBinding
+import com.example.task.EventNots
+import com.example.task.chat
+import com.example.task.compass
+import com.example.task.favourite
 
 
 class home : AppCompatActivity() {

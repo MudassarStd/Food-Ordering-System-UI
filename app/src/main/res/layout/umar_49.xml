@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="18dp"
+    tools:context=".umaractv.Activity_Umar49">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="416dp"
+        android:layout_height="726dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="411dp"
+            android:layout_height="266dp"
+            android:importantForAccessibility="no"
+            tools:layout_editor_absoluteX="-3dp"
+            tools:layout_editor_absoluteY="1dp"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="207dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/pizza_mashroum_sauce"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            tools:ignore="TextSizeCheck"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/topping"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="14dp"
+            tools:layout_editor_absoluteY="323dp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="383dp"
+            android:layout_height="37dp"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints,TextSizeCheck"
+            tools:layout_editor_absoluteX="14dp"
+            tools:layout_editor_absoluteY="361dp">
+
+            <!-- Meal Label -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="@string/meat" />
+
+            <!-- Price Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/rp2_000" />
+
+            <!-- Radio Button -->
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="384dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout1"
+            tools:ignore="MissingConstraints,TextSizeCheck"
+            tools:layout_editor_absoluteX="14dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="@string/chicken" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/rp2_000" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="383dp"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            tools:ignore="MissingConstraints,TextSizeCheck"
+            tools:layout_editor_absoluteX="14dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="@string/cheese" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/rp2_000" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="383dp"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+            tools:ignore="MissingConstraints,TextSizeCheck"
+            tools:layout_editor_absoluteX="14dp">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="@string/pepperoni" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/rp1" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="383dp"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+            tools:ignore="MissingConstraints,TextSizeCheck"
+            tools:layout_editor_absoluteX="14dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="@string/tuna_melt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/rp1" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="384dp"
+            android:layout_height="37dp"
+            android:orientation="horizontal"
+
+            tools:ignore="TextSizeCheck"
+            tools:layout_editor_absoluteX="13dp"
+            tools:layout_editor_absoluteY="620dp">
+
+            <!-- Meal Label -->
+
+            <!-- Price Label -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="@string/item_quantity"
+
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnMinus1"
+                android:layout_width="24dp"
+                android:layout_height="26dp"
+                android:background="@drawable/umar_45_1"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/tvQuantity1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-6dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/order_quantity"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnPlus1"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/umar_45_1"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnUmar49"
+            android:layout_width="114dp"
+            android:layout_height="48dp"
+            android:text="@string/order"
+            tools:layout_editor_absoluteX="145dp"
+            tools:layout_editor_absoluteY="672dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

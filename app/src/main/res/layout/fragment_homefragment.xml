@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/main_color"
     android:padding="15dp"
-    tools:context=".home">
+    tools:context=".MainActivity">
 
     <ScrollView
         android:layout_width="match_parent"

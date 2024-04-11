@@ -6,10 +6,11 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.mobileappproject.Adapters.home
 import com.example.mobileappproject.Fragments.Payment2Fragment_34
 import com.example.mobileappproject.Utils.MoveFragments
 import com.example.mobileappproject.databinding.ActivityPaymentHostBinding
-import com.example.task.home
+//import com.example.task.home
 
 class PaymentHostActivity : AppCompatActivity() {
     private lateinit var binding : ActivityPaymentHostBinding

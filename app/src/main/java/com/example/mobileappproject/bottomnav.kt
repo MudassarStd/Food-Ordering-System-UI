@@ -1,10 +1,14 @@
-package com.example.task
+package com.example.mobileappproject.Adapters
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.example.mobileappproject.databinding.ActivityBottomnavBinding
 import com.example.mobileappproject.R
+import com.example.task.EventNots
+import com.example.task.chat
+import com.example.task.compass
+import com.example.task.favourite
 
 
 class bottomnav : AppCompatActivity() {
@@ -16,10 +20,10 @@ class bottomnav : AppCompatActivity() {
 
 //Fragents
         val homefragment=homefragment();
-        val compass=compass();
-        val favourite=favourite();
-        val chat=chat();
-        val EventNots=EventNots();
+        val compass= compass();
+        val favourite= favourite();
+        val chat= chat();
+        val EventNots= EventNots();
 
         setCurrentFragment(homefragment);
 

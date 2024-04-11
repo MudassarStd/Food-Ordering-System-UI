@@ -1,4 +1,4 @@
-package com.example.task
+package com.example.mobileappproject.Adapters
 
 
 import android.content.Intent
@@ -9,6 +9,9 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.mobileappproject.PaymentHostActivity
 import com.example.mobileappproject.databinding.FragmentHomefragmentBinding
+import com.example.task.EmptyCart
+import com.example.task.recommendedOption
+import com.example.task.searchFood
 
 
 class homefragment : Fragment() {
