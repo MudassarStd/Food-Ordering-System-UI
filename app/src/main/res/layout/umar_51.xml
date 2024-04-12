@@ -8,29 +8,35 @@
 
 
     <LinearLayout
+        android:id="@+id/linearLayout9"
         android:layout_width="173dp"
         android:layout_height="210dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="263dp"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:layout_marginTop="150dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
 
         <ImageView
             android:id="@+id/imageView7"
             android:layout_width="match_parent"
             android:layout_height="135dp"
-            app:srcCompat="@android:drawable/alert_dark_frame"
-            android:importantForAccessibility="no" />
+            android:importantForAccessibility="no"
+            app:srcCompat="@android:drawable/alert_dark_frame" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="37dp"
+            android:textAlignment="center"
             android:text="@string/_1_2km" />
 
         <TextView
             android:id="@+id/textView8"
             android:layout_width="match_parent"
+            android:textAlignment="center"
             android:layout_height="39dp"
             android:text="@string/kfc_pejetan" />
     </LinearLayout>
@@ -39,10 +45,12 @@
         android:id="@+id/linearLayout7"
         android:layout_width="185dp"
         android:layout_height="211dp"
+        android:layout_marginTop="150dp"
         android:orientation="vertical"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="197dp"
-        tools:layout_editor_absoluteY="262dp">
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
 
         <ImageView
             android:id="@+id/imageView8"
@@ -55,12 +63,14 @@
             android:id="@+id/textView9"
             android:layout_width="match_parent"
             android:layout_height="37dp"
+            android:textAlignment="center"
             android:text="@string/_1_2km" />
 
         <TextView
             android:id="@+id/textView10"
             android:layout_width="match_parent"
             android:layout_height="41dp"
+            android:textAlignment="center"
             android:text="@string/kfc_pejetan" />
     </LinearLayout>
 
@@ -70,8 +80,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Move"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:backgroundTint="@color/PrimaryAppColor"
+        android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout7" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout9" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -18,25 +18,23 @@
         tools:targetApi="31">
 
 
+<!--        Umair -->
+
         <activity
             android:name=".delivery.OrderReview"
-            android:exported="false" >
+            android:exported="false" />
         <activity
             android:name=".delivery.OrderProcessing"
-            android:exported="false" >
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".delivery.Delivered"
             android:exported="false" />
         <activity
             android:name=".delivery.DeliveryHistory"
-            android:exported="false" >
-        </activity>
-<!--         <activity
-            android:name=".MainActivity"
-            android:exported="false" /> -->
-    
+            android:exported="false" />
 
+
+<!--        Umar-->
 
         <activity
             android:name=".umaractv.Activity_Umar52"
@@ -49,19 +47,15 @@
             android:exported="false" />
         <activity
             android:name=".umaractv.Activity_Umar49"
-            android:exported="false" />
-        <!--
-             To get one, follow the directions here:
+            android:exported="false"
+            android:theme="@style/PaymentHostActivity"/>
 
-                https://developers.google.com/maps/documentation/android-sdk/get-api-key
 
-             Once you have your API key (it starts with "AIza"), define a new property in your
-             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
-             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
-        -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyAxT-dMMUM6EiuGvOTkxAolE1Kcpe5Dtio" />
+
+<!--        Jamal -->
 
         <activity
             android:name="com.example.task.YourCart"
@@ -85,8 +79,11 @@
             android:name="com.example.task.tagsearch"
             android:exported="false" />
         <activity
-            android:name="com.example.task.bottomnav"
+            android:name=".Adapters.bottomnav"
             android:exported="false" /> <!-- Maaz -->
+
+<!--        Maaz-->
+
         <activity
             android:name=".Fifty_Nine"
             android:exported="false"
@@ -126,12 +123,16 @@
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.task.home"
+            android:name=".home"
             android:exported="true">
+
             <intent-filter>
+
                 <action android:name="android.intent.action.MAIN" />
 
-        <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
         </activity>
       </application>
 

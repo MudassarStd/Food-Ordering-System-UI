@@ -1,4 +1,4 @@
-package com.example.mobileappproject.Adapters
+package com.example.mobileappproject
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

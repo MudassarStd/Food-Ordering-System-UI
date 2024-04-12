@@ -39,11 +39,11 @@
     <color name="color_background"> #FFFFFF</color>
 
 
-    <color name="PrimaryAppColor">#FD6433</color>
-    <color name="PrimaryAppColorDark">#FD6433</color>
-    <color name="PrimaryAppColorAccent">#FD6433</color>
+    <color name="PrimaryAppColor">#FF6B15</color>
+    <color name="PrimaryAppColorDark">#FF6B15</color>
+    <color name="PrimaryAppColorAccent">#FF6B15</color>
     <color name="FadedColor">#A89892</color>
     <color name="lessFadedColor">#BDB0AB</color>
-    <color name="rbColor">#FF5722</color>
+    <color name="rbColor">#FF6B15</color>
 
 </resources>
