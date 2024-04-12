@@ -170,4 +170,25 @@
     <string name="kfc_kemangs">KFC Kemangs</string>
 
 
+<!--    Ibraheem-->
+    <string name="Register">Register</string>
+    <string name="Please_fill_in_a_few_details_below">Please fill in a few details below</string>
+    <string name="FullName">FullName</string>
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="Sign_in">Sign in</string>
+    <string name="Register_">Register </string>
+    <string name="Or">Or</string>
+    <string name="Register_with_google">Register with google</string>
+    <string name="Udin_petot">Udin petot</string>
+    <string name="Udin_Samsudin">Udin Samsudin</string>
+    <string name="Udin_petot_gmail_com">Udinpetot@gmail.com</string>
+    <string name="Dot">......</string>
+    <string name="Email_has_been_used">Email has been used</string>
+    <string name="Sign_In">Sign In</string>
+    <string name="Enter_your_registered_email_to_sign_in">Enter your registered email to sign in</string>
+    <string name="Forgot_Password">Forgot Password?</string>
+    <string name="Sign_In_">Sign In</string>
+    <string name="Sign_in_with_google">Sign in with google</string>
+    <string name="Oops_your_password_is_incorrect">Oops,your password is incorrect</string>
 </resources>
