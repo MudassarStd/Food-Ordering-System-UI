@@ -1,10 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="color_black">#FF000000</color>
-    <color name="color_white">#FFFFFFFF</color>
+
+   
     <color name="color_primary">#FF6B15</color>
     <color name="color_text_1">#697586</color>
     <color name="color_text_2">#5E6978</color>
     <color name="color_grid_border">#E5E7E9</color>
     <color name="color_divider">#F2F2F2</color>
+
+    <color name="black">#FF000000</color>
+    <color name="fade_black">#B2000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="main_color">#FAFAFA</color>
+
+    <!--    <color name="PrimaryAppColor">#FF5722</color>-->
+
+    <color name="red">#FF0000</color>
+    <color name="green">#00EF0A</color>
+    <color name="searchbar_color">#FFFFFF</color>
+    <color name="primary_color">#FF5722</color>
+    <color name="outline_primary_color">#FFFFFF</color>
+    <color name="icon_bg_color">#FFA501</color>
+    <color name="fade_gray_color">#75CCCED1</color>
+    <color name="mehroon_color">#A82822</color>
+
+
+    <color name="color_gray">#A19C9C</color>
+    <color name="color_black">#000000</color>
+
+    <color name="gradient_color">#37FF5722</color>
+    <color name="searchtag_color">#12FF5722</color>
+
+
+    <color name="btn_color_Accent">#2196F3</color>
+    <color name="btn_color_primary">#FF5722</color>
+    <color name="secondary_color">#607D8B</color>
+    <color name="color_text">#212121</color>
+    <color name="color_background"> #FFFFFF</color>
+
+
+    <color name="PrimaryAppColor">#FD6433</color>
+    <color name="PrimaryAppColorDark">#FD6433</color>
+    <color name="PrimaryAppColorAccent">#FD6433</color>
+    <color name="FadedColor">#A89892</color>
+    <color name="lessFadedColor">#BDB0AB</color>
+    <color name="rbColor">#FF5722</color>
+
 </resources>

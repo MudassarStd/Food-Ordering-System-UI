@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,11 +17,10 @@
         android:theme="@style/Theme.MobileAppProject"
         tools:targetApi="31">
 
+
         <activity
             android:name=".delivery.OrderReview"
             android:exported="false" >
-
-        </activity>
         <activity
             android:name=".delivery.OrderProcessing"
             android:exported="false" >
@@ -29,9 +32,107 @@
             android:name=".delivery.DeliveryHistory"
             android:exported="false" >
         </activity>
+<!--         <activity
+            android:name=".MainActivity"
+            android:exported="false" /> -->
+    
+
+
+        <activity
+            android:name=".umaractv.Activity_Umar52"
+            android:exported="false" />
+        <activity
+            android:name=".umaractv.Activity_Umar51"
+            android:exported="false" />
+        <activity
+            android:name=".umaractv.Activity_Umar50"
+            android:exported="false" />
+        <activity
+            android:name=".umaractv.Activity_Umar49"
+            android:exported="false" />
+        <!--
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAxT-dMMUM6EiuGvOTkxAolE1Kcpe5Dtio" />
+
+        <activity
+            android:name="com.example.task.YourCart"
+            android:exported="false" />
+        <activity
+            android:name="com.example.task.EmptyCart"
+            android:exported="false" />
+        <activity
+            android:name="com.example.task.yourFavourite"
+            android:exported="false" />
+        <activity
+            android:name="com.example.task.SearchFoood2"
+            android:exported="false" />
+        <activity
+            android:name="com.example.task.searchFood"
+            android:exported="false" />
+        <activity
+            android:name="com.example.task.recommendedOption"
+            android:exported="false" />
+        <activity
+            android:name="com.example.task.tagsearch"
+            android:exported="false" />
+        <activity
+            android:name="com.example.task.bottomnav"
+            android:exported="false" /> <!-- Maaz -->
+        <activity
+            android:name=".Fifty_Nine"
+            android:exported="false"
+            android:label="@string/title_activity_fifty_nine"
+            android:theme="@style/Theme.MobileAppProject" />
+        <activity
+            android:name=".Fifty_Eight"
+            android:exported="false" />
+        <activity
+            android:name=".Fifty_Seven"
+            android:exported="false" />
+        <activity
+            android:name=".Fifty_Six"
+            android:exported="true" />
+        <activity
+            android:name=".Fifty_Five"
+            android:exported="true" />
+        <activity
+            android:name=".Fifty_Four"
+            android:exported="false" />
+        <activity
+            android:name=".AddNewChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentHostActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/PaymentHostActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".LocationFragmentHostActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".MainActivity"
-            android:exported="false" />
-    </application>
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.task.home"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+        </activity>
+      </application>
 
 </manifest>

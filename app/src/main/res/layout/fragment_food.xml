@@ -1,0 +1,778 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="2"
+    android:rowCount="3"
+    android:padding="5dp"
+    android:alignmentMode="alignMargins"
+    android:columnOrderPreserved="false">
+
+
+    <!-- First row -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:orientation="vertical"
+            app:cardElevation="2dp"
+            android:padding="15dp">
+
+            <!-- Your content for the first CardView -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="0.5"
+                    android:layout_gravity="center"
+                    android:src="@drawable/burgerremovebg" />
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3.5"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/tv_card_title"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+
+                    <ImageView
+                        android:id="@+id/locationicon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/outline_location_on_24"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/title" />
+
+                    <TextView
+                        android:id="@+id/kilometertxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_distance"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="@id/locationicon"
+                        app:layout_constraintStart_toEndOf="@id/locationicon"
+                        app:layout_constraintTop_toTopOf="@id/locationicon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/tv_time"
+                        android:textColor="@color/color_gray"
+                        app:layout_constraintStart_toEndOf="@id/kilometertxt"
+                        app:layout_constraintTop_toTopOf="@id/kilometertxt" />
+
+                    <ImageView
+                        android:id="@+id/starrating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:src="@drawable/baseline_star_24"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/locationicon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/tv_rating"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="@id/starrating"
+                        app:layout_constraintStart_toEndOf="@id/starrating"
+                        app:layout_constraintTop_toTopOf="@id/starrating" />
+
+                    <TextView
+                        android:id="@+id/pricing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_price"
+                        android:paddingStart="10sp"
+                        android:textColor="@color/primary_color"
+                        app:layout_constraintStart_toStartOf="@id/starrating"
+                        app:layout_constraintTop_toBottomOf="@id/starrating"
+                        />
+
+                    <ImageView
+                        android:id="@+id/heart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/heart"
+                        app:layout_constraintBottom_toBottomOf="@id/pricing"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.837"
+                        app:layout_constraintStart_toEndOf="@id/pricing"
+                        app:layout_constraintTop_toTopOf="@id/pricing"
+                        app:layout_constraintVertical_bias="1.0"
+                        />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Second CardView of the first row -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:orientation="vertical"
+            app:cardElevation="2dp"
+            android:padding="15dp">
+
+            <!-- Your content for the first CardView -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="0.5"
+                    android:layout_gravity="center"
+                    android:src="@drawable/burgerremovebg" />
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3.5"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/tv_card_title"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+
+                    <ImageView
+                        android:id="@+id/locationicon1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/outline_location_on_24"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/title1" />
+
+                    <TextView
+                        android:id="@+id/kilometertxt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_distance"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="@id/locationicon1"
+                        app:layout_constraintStart_toEndOf="@id/locationicon1"
+                        app:layout_constraintTop_toTopOf="@id/locationicon1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/tv_time"
+                        android:textColor="@color/color_gray"
+                        app:layout_constraintStart_toEndOf="@id/kilometertxt1"
+                        app:layout_constraintTop_toTopOf="@id/kilometertxt1" />
+
+                    <ImageView
+                        android:id="@+id/starrating1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:src="@drawable/baseline_star_24"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/locationicon1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/tv_rating"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="@id/starrating1"
+                        app:layout_constraintStart_toEndOf="@id/starrating1"
+                        app:layout_constraintTop_toTopOf="@id/starrating1" />
+
+                    <TextView
+                        android:id="@+id/pricing1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_price"
+                        android:paddingStart="10sp"
+                        android:textColor="@color/primary_color"
+                        app:layout_constraintStart_toStartOf="@id/starrating1"
+                        app:layout_constraintTop_toBottomOf="@id/starrating1"
+                        />
+
+                    <ImageView
+                        android:id="@+id/heart1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/heart"
+                        app:layout_constraintBottom_toBottomOf="@id/pricing1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.837"
+                        app:layout_constraintStart_toEndOf="@id/pricing1"
+                        app:layout_constraintTop_toTopOf="@id/pricing1"
+                        app:layout_constraintVertical_bias="1.0"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- Second row -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:orientation="vertical"
+            app:cardElevation="2dp"
+            android:padding="15dp">
+
+            <!-- Your content for the first CardView -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/burgerremovebg" />
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3.5"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/title2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/tv_card_title"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+
+                    <ImageView
+                        android:id="@+id/locationicon2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/outline_location_on_24"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/title2" />
+
+                    <TextView
+                        android:id="@+id/kilometertxt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_distance"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="@id/locationicon2"
+                        app:layout_constraintStart_toEndOf="@id/locationicon2"
+                        app:layout_constraintTop_toTopOf="@id/locationicon2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/tv_time"
+                        android:textColor="@color/color_gray"
+                        app:layout_constraintStart_toEndOf="@id/kilometertxt2"
+                        app:layout_constraintTop_toTopOf="@id/kilometertxt2" />
+
+                    <ImageView
+                        android:id="@+id/starrating2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:src="@drawable/baseline_star_24"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/locationicon2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/tv_rating"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="@id/starrating2"
+                        app:layout_constraintStart_toEndOf="@id/starrating2"
+                        app:layout_constraintTop_toTopOf="@id/starrating2" />
+
+                    <TextView
+                        android:id="@+id/pricing2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_price"
+                        android:paddingStart="10sp"
+                        android:textColor="@color/primary_color"
+                        app:layout_constraintStart_toStartOf="@id/starrating2"
+                        app:layout_constraintTop_toBottomOf="@id/starrating2"
+                        />
+
+                    <ImageView
+                        android:id="@+id/heart2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/heart"
+                        app:layout_constraintBottom_toBottomOf="@id/pricing2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.837"
+                        app:layout_constraintStart_toEndOf="@id/pricing2"
+                        app:layout_constraintTop_toTopOf="@id/pricing2"
+                        app:layout_constraintVertical_bias="1.0"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Second CardView of the second row -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:orientation="vertical"
+            app:cardElevation="2dp"
+            android:padding="15dp">
+
+            <!-- Your content for the first CardView -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/burgerremovebg" />
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3.5"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/title3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/tv_card_title"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+
+                    <ImageView
+                        android:id="@+id/locationicon3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/outline_location_on_24"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/title3" />
+
+                    <TextView
+                        android:id="@+id/kilometertxt3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_distance"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="@id/locationicon3"
+                        app:layout_constraintStart_toEndOf="@id/locationicon3"
+                        app:layout_constraintTop_toTopOf="@id/locationicon3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/tv_time"
+                        android:textColor="@color/color_gray"
+                        app:layout_constraintStart_toEndOf="@id/kilometertxt3"
+                        app:layout_constraintTop_toTopOf="@id/kilometertxt3" />
+
+                    <ImageView
+                        android:id="@+id/starrating3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:src="@drawable/baseline_star_24"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/locationicon3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/tv_rating"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="@id/starrating3"
+                        app:layout_constraintStart_toEndOf="@id/starrating3"
+                        app:layout_constraintTop_toTopOf="@id/starrating3" />
+
+                    <TextView
+                        android:id="@+id/pricing3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_price"
+                        android:paddingStart="10sp"
+                        android:textColor="@color/primary_color"
+                        app:layout_constraintStart_toStartOf="@id/starrating3"
+                        app:layout_constraintTop_toBottomOf="@id/starrating3"
+                        />
+
+                    <ImageView
+                        android:id="@+id/heart3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/heart"
+                        app:layout_constraintBottom_toBottomOf="@id/pricing3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.837"
+                        app:layout_constraintStart_toEndOf="@id/pricing3"
+                        app:layout_constraintTop_toTopOf="@id/pricing3"
+                        app:layout_constraintVertical_bias="1.0"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <!--    Third row-->
+    <!-- Second row -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:orientation="vertical"
+            app:cardElevation="2dp"
+            android:padding="15dp">
+
+            <!-- Your content for the first CardView -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/burgerremovebg" />
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3.5"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/title5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/tv_card_title"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+
+                    <ImageView
+                        android:id="@+id/locationicon5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/outline_location_on_24"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/title5" />
+
+                    <TextView
+                        android:id="@+id/kilometertxt5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_distance"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="@id/locationicon5"
+                        app:layout_constraintStart_toEndOf="@id/locationicon5"
+                        app:layout_constraintTop_toTopOf="@id/locationicon5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/tv_time"
+                        android:textColor="@color/color_gray"
+                        app:layout_constraintStart_toEndOf="@id/kilometertxt5"
+                        app:layout_constraintTop_toTopOf="@id/kilometertxt5" />
+
+                    <ImageView
+                        android:id="@+id/starrating5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:src="@drawable/baseline_star_24"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/locationicon5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/tv_rating"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="@id/starrating5"
+                        app:layout_constraintStart_toEndOf="@id/starrating5"
+                        app:layout_constraintTop_toTopOf="@id/starrating5" />
+
+                    <TextView
+                        android:id="@+id/pricing5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_price"
+                        android:paddingStart="10sp"
+                        android:textColor="@color/primary_color"
+                        app:layout_constraintStart_toStartOf="@id/starrating5"
+                        app:layout_constraintTop_toBottomOf="@id/starrating5"
+                        />
+
+                    <ImageView
+                        android:id="@+id/heart5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/heart"
+                        app:layout_constraintBottom_toBottomOf="@id/pricing5"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.837"
+                        app:layout_constraintStart_toEndOf="@id/pricing5"
+                        app:layout_constraintTop_toTopOf="@id/pricing5"
+                        app:layout_constraintVertical_bias="1.0"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Second CardView of the third row -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:orientation="vertical"
+            app:cardElevation="2dp"
+            android:padding="15dp">
+
+            <!-- Your content for the first CardView -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/burgerremovebg" />
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3.5"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/title6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/tv_card_title"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+
+                    <ImageView
+                        android:id="@+id/locationicon6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/outline_location_on_24"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/title6" />
+
+                    <TextView
+                        android:id="@+id/kilometertxt6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_distance"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="@id/locationicon6"
+                        app:layout_constraintStart_toEndOf="@id/locationicon6"
+                        app:layout_constraintTop_toTopOf="@id/locationicon6" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/tv_time"
+                        android:textColor="@color/color_gray"
+                        app:layout_constraintStart_toEndOf="@id/kilometertxt6"
+                        app:layout_constraintTop_toTopOf="@id/kilometertxt6" />
+
+                    <ImageView
+                        android:id="@+id/starrating6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:src="@drawable/baseline_star_24"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/locationicon6" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/tv_rating"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="@id/starrating6"
+                        app:layout_constraintStart_toEndOf="@id/starrating6"
+                        app:layout_constraintTop_toTopOf="@id/starrating6" />
+
+                    <TextView
+                        android:id="@+id/pricing6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_price"
+                        android:paddingStart="10sp"
+                        android:textColor="@color/primary_color"
+                        app:layout_constraintStart_toStartOf="@id/starrating6"
+                        app:layout_constraintTop_toBottomOf="@id/starrating6"
+                        />
+
+                    <ImageView
+                        android:id="@+id/heart6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/heart"
+                        app:layout_constraintBottom_toBottomOf="@id/pricing6"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.837"
+                        app:layout_constraintStart_toEndOf="@id/pricing6"
+                        app:layout_constraintTop_toTopOf="@id/pricing6"
+                        app:layout_constraintVertical_bias="1.0"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</GridLayout>
+
+   </ScrollView>

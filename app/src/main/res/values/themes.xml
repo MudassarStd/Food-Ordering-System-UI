@@ -2,8 +2,42 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.MobileAppProject" parent="Theme.Material3.Light.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">@color/white</item>
+<!--        <item name="android:buttonStyle">@style/DefaultButtonStyle</item>-->
     </style>
 
+
+
+<!--    paymenthostActivity theme-->
+
+    <style name="PaymentHostActivity" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+                <item name="android:buttonStyle">@style/DefaultButtonStyle</item>
+        <item name="colorPrimary">@color/PrimaryAppColor</item>
+        <item name="colorPrimaryDark">@color/PrimaryAppColorDark</item>
+        <item name="colorAccent">@color/PrimaryAppColorAccent</item>
+    </style>
+
+
     <style name="Theme.MobileAppProject" parent="Base.Theme.MobileAppProject" />
+
+
+<!--    Color for radio buttons-->
+    <style name="AppTheme.RadioButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:colorControlNormal">@color/rbColor</item>
+    </style>
+
+<!--    Color scheme for checkBoxes-->
+
+    <!-- Default style for buttons -->
+    <style name="DefaultButtonStyle" parent="Widget.AppCompat.Button">
+        <!-- Set the default background tint for buttons -->
+        <item name="android:backgroundTint">@color/PrimaryAppColor</item>
+        <!-- Add more button-related attributes as needed -->
+    </style>
+
+    <!-- Custom styles for ToolBar -->
+    <style name="CustomToolbarTextStyle" parent="Widget.AppCompat.Toolbar">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
 </resources>
