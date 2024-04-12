@@ -19,6 +19,26 @@
 
 
         <activity
+            android:name=".delivery.OrderReview"
+            android:exported="false" >
+        <activity
+            android:name=".delivery.OrderProcessing"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name=".delivery.Delivered"
+            android:exported="false" />
+        <activity
+            android:name=".delivery.DeliveryHistory"
+            android:exported="false" >
+        </activity>
+<!--         <activity
+            android:name=".MainActivity"
+            android:exported="false" /> -->
+    
+
+
+        <activity
             android:name=".umaractv.Activity_Umar52"
             android:exported="false" />
         <activity
@@ -111,9 +131,8 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <category android:name="android.intent.category.LAUNCHER" />
         </activity>
-    </application>
+      </application>
 
 </manifest>

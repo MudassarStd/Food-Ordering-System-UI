@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".delivery.DeliveryHistory">
+
+    <!--MAIN LAYOUT-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/padding_delivery_history_screen"
+        android:paddingEnd="@dimen/padding_delivery_history_screen"
+        android:layout_marginTop="25dp"
+        >
+        <!--DELIVERY HISTORY DATA-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <!-- TextView on the left -->
+            <TextView
+                android:id="@+id/delivery_history_header"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/delivery_history_title"
+                android:textColor="@color/color_black"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_large"
+                />
+
+            <!-- Vertical LinearLayout for the two right TextViews -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- First TextView on the right -->
+                <TextView
+                    android:id="@+id/delivery_history_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/delivery_history_date"
+                    android:textColor="@color/color_text_2"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textStyle="bold"/>
+
+                <!-- Second TextView below the first one -->
+                <TextView
+                    android:id="@+id/delivery_history_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/delivery_history_code"
+                    android:textColor="@color/color_text_2"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_size_medium"/>
+            </LinearLayout>
+
+        </LinearLayout> <!--DELIVERY HISTORY DATA-->
+
+        <!--DELIVERY Detail Text-->
+        <TextView
+            android:id="@+id/delivery_history_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/delivery_history_detail_txt"
+            android:textColor="@color/color_text_2"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_medium"
+            android:layout_marginTop="30dp"
+            />
+
+        <!--DELIVERY DETAIL CARD-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+
+                <!-- ImageView on the left -->
+                <ImageView
+                    android:id="@+id/delivery_history_location_image"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:importantForAccessibility="no"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/image_food_item_142"
+                    />
+
+                <!-- Vertical LinearLayout for the two right TextViews -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="16dp">
+
+                    <!-- First TextView below the ImageView -->
+                    <TextView
+                        android:id="@+id/delivery_history_location_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/delivery_history_location_label"
+                        android:textColor="@color/color_text_1"
+                        android:textSize="@dimen/text_size_medium"
+                        android:layout_marginTop="5dp"
+                        />
+
+                    <!-- Second TextView below the first one -->
+                    <TextView
+                        android:id="@+id/delivery_history_location_subtitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/delivery_history_location"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/text_size_large"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <!-- ImageView on the left -->
+            <ImageView
+                android:id="@+id/delivery_history_location_target_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/image_target_142"
+                android:scaleType="centerCrop"
+                android:importantForAccessibility="no" />
+
+            <!-- Vertical LinearLayout for the two right TextViews -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp">
+
+                <!-- First TextView below the ImageView -->
+                <TextView
+                    android:id="@+id/delivery_history_target_location_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delivery_history_target_label"
+                    android:textColor="@color/color_text_1"
+                    android:textSize="@dimen/text_size_medium"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <!-- Second TextView below the first one -->
+                <TextView
+                    android:id="@+id/delivery_history_target_location_subtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delivery_history_target_location"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_size_large"
+                    android:textColor="@color/color_black"
+                    android:layout_marginTop="10dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/delivery_history_order_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delivery_history_order_title"
+            android:textColor="@color/color_text_1"
+            android:textSize="@dimen/text_size_medium"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="@dimen/margin_inner"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_inner"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/delivery_history_order_item_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/delivery_history_order_item_1"
+                android:textColor="@color/color_black"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/delivery_history_order_item_1_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/delivery_history_order_item_1_quantity"
+                android:textColor="@color/color_black"
+                android:textStyle="bold"
+                android:gravity="end"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_inner"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/delivery_history_order_item_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/delivery_history_order_item_2"
+                android:textColor="@color/color_black"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/delivery_history_order_item_2_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/delivery_history_order_item_2_quantity"
+                android:textColor="@color/color_black"
+                android:textStyle="bold"
+                android:gravity="end"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+        <!-- PAYMENT DETAILS -->
+        <TextView
+            android:id="@+id/delivery_history_payment_details_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/delivery_history_payment_details_title"
+            android:textColor="@color/color_text_1"
+            android:textSize="@dimen/text_size_medium"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/top_rounded_borders_142"
+            android:layout_marginTop="5dp"
+            >
+            <TextView
+                android:id="@+id/delivery_history_payment_details_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_inner"
+                android:layout_marginTop="10dp"
+                android:text="@string/delivery_history_payment_details_price"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_weight="1"
+                android:gravity="start"
+                />
+            <TextView
+                android:id="@+id/delivery_history_payment_details_price_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_inner"
+                android:layout_marginTop="10dp"
+                android:text="@string/delivery_history_payment_details_price_amount"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_weight="1"
+                android:gravity="end"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/square_borders_142"
+            >
+            <TextView
+                android:id="@+id/delivery_history_payment_details_price_delivery_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_inner"
+                android:layout_marginTop="10dp"
+                android:text="@string/delivery_history_payment_details_delivery_fee"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_weight="1"
+                android:gravity="start"
+                />
+            <TextView
+                android:id="@+id/delivery_history_payment_details_price_delivery_fee_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_inner"
+                android:layout_marginTop="10dp"
+                android:text="@string/delivery_history_payment_details_delivery_fee_amount"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_weight="1"
+                android:gravity="end"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/square_borders_142"
+            >
+            <TextView
+                android:id="@+id/delivery_history_payment_details_price_discounts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_inner"
+                android:layout_marginTop="10dp"
+                android:text="@string/delivery_history_payment_details_discounts"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_weight="1"
+                android:gravity="start"
+                />
+
+            <TextView
+                android:id="@+id/delivery_history_payment_details_discounts_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_inner"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="@string/delivery_history_payment_details_delivery_fee_amount"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_size_medium" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/square_borders_142"
+            >
+            <TextView
+                android:id="@+id/delivery_history_payment_details_price_packaging"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_inner"
+                android:layout_marginTop="10dp"
+                android:text="@string/delivery_history_payment_details_packaging_fee"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_weight="1"
+                android:gravity="start"
+                />
+            <TextView
+                android:id="@+id/delivery_history_payment_details_packaging_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_inner"
+                android:layout_marginTop="10dp"
+                android:text="@string/delivery_history_payment_details_packaging_fee_amount"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_weight="1"
+                android:gravity="end"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/bottom_rounded_borders_142"
+            >
+            <TextView
+                android:id="@+id/delivery_history_payment_details_total_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_inner"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/delivery_history_payment_details_total_payment"
+                android:textColor="@color/color_black"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_weight="1"
+                android:gravity="start"
+                />
+            <TextView
+                android:id="@+id/delivery_history_payment_details_total_payment_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_inner"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/delivery_history_payment_details_total_payment_amount"
+                android:textColor="@color/color_black"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_weight="1"
+                android:gravity="end"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_size_medium"
+            android:text="@string/delivery_history_payment_method"
+            style="bold"
+            android:layout_marginHorizontal="@dimen/margin_inner"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/delivery_history_bottom_button"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/delivery_history_bottom_button"
+                android:textColor="@color/color_primary"
+                android:background="@drawable/bottom_button_142"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                />
+        </RelativeLayout>
+
+
+    </LinearLayout> <!--MAIN LAYOUT-->
+</ScrollView>
