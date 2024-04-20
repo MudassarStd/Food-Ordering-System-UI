@@ -60,7 +60,7 @@
         android:drawableRight="@drawable/ic_icon_eye"
         android:hint="@string/Password"/>
     <TextView
-        android:id="@+id/tv_forget_password"
+        android:id="@+id/tvBtnPg12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end"

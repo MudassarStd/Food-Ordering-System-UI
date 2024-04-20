@@ -70,7 +70,7 @@
             android:textColor="@color/PrimaryAppColor"
             android:textSize="20sp" />
         <Button
-            android:id="@+id/btn_reg"
+            android:id="@+id/btnPg11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="80dp"

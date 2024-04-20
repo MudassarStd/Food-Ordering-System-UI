@@ -46,7 +46,16 @@
             android:exported="false" />
         <activity
             android:name=".Reg_pg_07"
-            android:exported="false" />
+            android:exported="true" >
+                <intent-filter>
+
+                        <action android:name="android.intent.action.MAIN" />
+
+                        <category android:name="android.intent.category.LAUNCHER" />
+
+                </intent-filter>
+
+        </activity>
 
 
 <!--        Umair -->
@@ -155,16 +164,7 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".home"
-            android:exported="true">
-
-            <intent-filter>
-
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-
-            </intent-filter>
-        </activity>
+            android:exported="false"/>
       </application>
 
 </manifest>

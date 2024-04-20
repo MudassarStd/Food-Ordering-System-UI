@@ -61,7 +61,7 @@
             android:inputType="textPassword"
             android:text="jkuhkhj"/>
         <TextView
-            android:id="@+id/tv_forget_password"
+            android:id="@+id/tvBtnPg13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
