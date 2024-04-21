@@ -1,9 +1,6 @@
 package com.example.mobileappproject.Fragments
 
-import android.content.Intent
 import android.os.Bundle
-import android.os.IBinder.DeathRecipient
-import android.os.Message
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -13,12 +10,9 @@ import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mobileappproject.Adapters.ChatRVAdapter
-import com.example.mobileappproject.MainActivity
 import com.example.mobileappproject.R
 import com.example.mobileappproject.Utils.ChatDataModel
-import com.example.mobileappproject.Utils.MoveFragments
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 
 class ChatFragment : Fragment() {
